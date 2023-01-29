@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #22272e;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14px;
+}
+.title {
+    padding: 4px 12px;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 3px solid #FFF;
+    margin: 24px 0;
+}
+.infos {
+    padding: 4px 12px;
+    margin: 24px 0;
+    flex-direction: column;
+}
+.infos label {
+    color: #FFF;
+    font-size: 20px;
+}
+.infos .input {
+    height: 48px;
+    width: 100%;
+    border: 1px solid #22272e;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0 14px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.infos .input:focus {
+    outline: 0;
+}
+.btn {
+    height: 48px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #22272e;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #FFF;
+    color: #22272e;
+    border-radius: 0;
+}
+
+
+.result {
+    background-color: rgb(240, 240, 240);
+    width: 90%;
+    padding: 20px 28px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: 0.5s;
+}
+.result:hover {
+    transform: scale(1.03);
+    border-radius: 0;
+}
+.result span {
+    margin-top: 5px;
+}
+#resultado, #cada {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.hide {
+    display: none;
+}
+
+
+#invalid {
+    font-size: 14px;
+    color: red;
+}
+.invalid {
+    display: none;
+}

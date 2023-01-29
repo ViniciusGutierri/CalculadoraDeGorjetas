@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title> Calculadora de Gorjetas </title>
+
+    </head>
+
+    <body>
+
+        <main class="container">
+            <div class="title">
+                <h1> CALCULADORA DE GORJETAS </h1>
+            </div>
+                
+            <form class="infos" id="infos" onsubmit="calculateTip(event)">
+                <label class="valor" for="preco"> Quanto ficou a conta? </label>
+                <input type="number" class="input" placeholder="R$100" id="valor" required>
+
+                <label class="service" for="serviceQual"> Como foi seu serviço? </label>
+                <span class="invalid" id="invalid">Insira uma opção válida!</span>
+                <select id="serviceQual" class="input" required>
+                    <option disable selected value="0"> Escolha uma opção </option>
+                    <option value="0.3"> 30% - Incrível </option>
+                    <option value="0.2"> 20% - Bom </option>
+                    <option value="0.15"> 15% - Regular </option>
+                    <option value="0.1"> 10% - Ruim </option>
+                    <option value="0.05"> 5% - Péssimo </option>
+                </select>
+
+                <label for="qtde" class="pessoas"> Quantas pessoas vão dividir a conta? </label>
+                <input type="number" class="input" id="qtde" placeholder="3 pessoas" required>
+
+                <input type="submit" class="btn" value="CALCULAR">
+            </form>
+
+            <div id="resultTip" class="result hide">
+                <span id="resultado"> Gorjeta total: R$0,00 </span>
+                <span id="cada"> cada </span>
+            </div>
+
+        </main>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
